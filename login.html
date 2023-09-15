@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to my page</title>
+</head>
+<body>
+    <div class="login-wrapper">
+        <form action="" class="from">
+            <h2>login</h2> 
+            <div class="input-group">
+                <input type="text" name="loginuser" id="email" required />
+                <label for="loginuser">email address </label>
+            </div>
+            <div class="input-group">
+                <input
+                type="password"
+                name="loginpassword"
+                id="password"
+                required
+                />
+                <label for="loginpassword">password</label>
+            </div>
+            <input type="submit" value="login" class="submit-btn"onclick="auth()" />
+        </form>
+        </div>
+        <script>
+            function auth (){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                if(email=="admin@gmail.com"&& password=="admin123"){
+                    window.location.assign("project02.html");
+                    alert("login succesfully");
+                }
+                else{
+                    alert("invalid Information");
+                    return;
+                }
+            }
+        </script>
+</body>
+</html>
