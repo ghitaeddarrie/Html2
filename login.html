@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body style="background-color: rgb(33, 219, 219); height: 100%; width: 100%;   display: flex;
+justify-content: center;">
+    
+    <form action="" style="background-color: rgb(253, 253, 253); height: 500px; width: 400px;   display: flex;
+    justify-content: center;" >
+        <div style="width: 70%; ">
+        <!-- Headings for the form -->
+            <h2 style=" text-align: center">Sign in</h2>
+
+        <!-- Main container for all inputs -->
+        
+            <!-- Username -->
+            <div style="margin-bottom: 10px ; display: flex ; flex-direction: column;">
+            <label for="username">Username:</label>
+            <input style="width: 90%; padding: 20px;" type="text" placeholder="Enter Username" name="username" required>
+            </div>
+            <!-- Password -->
+             <div style=" margin-bottom: 10px ; display: flex ; flex-direction: column; " >
+                <label  for="pswrd">Password:</label>
+                <input style="width: 90%; padding: 20px;"  type="password" placeholder="Enter Password" name="password" required>
+             </div>
+            <!-- sub container for the checkbox and forgot password link -->
+            <div style="margin-bottom: 10px">
+                
+                  <input  type="checkbox" checked="checked" name="remember"> <span >Remember me</span>
+                      
+            </div>
+
+
+            <!-- Submit button -->
+            <div style=" display: flex;
+            justify-content: center;">
+                <button style="width: 90%; padding: 20px; background-color: rgb(61, 135, 135)  " type="submit">Login</button>
+            </div>
+
+            <!-- Sign up link -->
+            <p class="forgotpsd"> <a href="#">Forgot Password?</a></p> 
+            <p >Not a member?  <a href="#">Register here!</a></p>
+
+        </div>
+
+    
+
+    </form>
+</body>
+</html>
